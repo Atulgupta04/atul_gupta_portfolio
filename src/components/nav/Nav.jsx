@@ -1,23 +1,20 @@
 import React from 'react'
 import nav from './nav.css'
 import {AiOutlineHome} from'react-icons/ai'
-import {AiOutlineUser} from'react-icons/ai'
-import {BiBook } from 'react-icons/bi'
 import {AiOutlineProject } from 'react-icons/ai'
 import {RiMessageFill} from 'react-icons/ri'
+import { useState } from 'react'
 
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
 
-      <a href="#" className='active'> <AiOutlineHome /> </a>
-      <a href="#about"> <AiOutlineUser /> </a>
-      <a href="#experience"> <BiBook /> </a>
-      <a href="#projects"> <AiOutlineProject/> </a>
-      <a href="#contact"> <RiMessageFill /> </a>
+      <a href="#" onClick={ () => setActiveNav('#') } className={activeNav === '#' ? 'active' : ''}> <AiOutlineHome /> </a>
+      <a href="#projects" onClick={ () => setActiveNav('#projects') } className={activeNav === '#projects' ? 'active' : ''}> <AiOutlineProject/> </a>
+      <a href="#contact" onClick={ () => setActiveNav('#contact') } className={activeNav === '#contact' ? 'active' : ''}> <RiMessageFill /> </a>
     </nav>
 
-          /* Start from 1: 18:16   */
   )
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import CV from '../../assets/Atul_Gupta-Resume.pdf'
 
 const CVT = () => {
   return (

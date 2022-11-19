@@ -18,6 +18,33 @@
     color: black;
   }
 
+  .ahreff:hover{
+    color: #2196F3;
+  }
+
+  .texth{
+    text-decoration: underline;
+  }
+
+  .card{  
+    box-shadow: 0 4px 8px 0 skyblue;
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    }
+    
+  .web-btn{
+    width: 50%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: blue;
+   border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+  }
+
   .textt, .texth{
     color: black;
 }
